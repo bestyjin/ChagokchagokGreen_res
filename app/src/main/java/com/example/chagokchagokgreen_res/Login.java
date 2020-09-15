@@ -17,8 +17,6 @@ public class Login extends AppCompatActivity {
     String id, pw;
     String stestid, stestpw, sname;
 
-    //TextView testid, testpw;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,23 +30,6 @@ public class Login extends AppCompatActivity {
         below_btn2 = (ImageButton) findViewById(R.id.btn4);
         loginid = (EditText)findViewById(R.id.loginid);
         loginpw = (EditText)findViewById(R.id.loginpw);
-        //testid = (TextView)findViewById(R.id.testid);
-        //testpw = (TextView)findViewById(R.id.testpw);
-
-
-        /*try {
-            stestid = mydb.getLoginid();
-            stestpw = mydb.getPw();
-            testid.setText(stestid);
-            testpw.setText(stestpw);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            throw e;
-
-        }*/
-
-
 
 
         singup.setOnClickListener(new View.OnClickListener() {

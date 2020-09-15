@@ -21,7 +21,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //사업자인증 테이블
     public static final String RES_TABLE_NAME = "resinfo";
-    //public static final String RES_COLUMN_QR = "qr";
     public static final String RES_COLUMN_RNAME = "rname";
     public static final String RES_COLUMN_RESNAME = "resname";
     public static final String RES_COLUMN_RESNUM = "resnum";
@@ -148,7 +147,6 @@ public class DBHelper extends SQLiteOpenHelper {
         return array_seq;
     }
 
-
     // 사업자 인증
     public boolean insertResinfo(String db_rname, String db_resname, String db_resnum) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -179,9 +177,6 @@ public class DBHelper extends SQLiteOpenHelper {
         db.update("resinfo", contentValues, "id = ? ", null);
         return true;
     }
-
-
-
 
     // 회원가입
     //id password name phone email
@@ -269,25 +264,4 @@ public class DBHelper extends SQLiteOpenHelper {
         }
         return setPw;
     }
-
-    /*public String[] getId(int seq) {
-        ArrayList array_list = new ArrayList();
-        SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res = db.rawQuery("select * from zimlist", null);
-        res.moveToFirst();
-        seq = 0;
-        while (res.isAfterLast() == false) {
-            array_list.add(seq +". "+   // 목록 순서 번호 매기기
-                    res.getString(res.getColumnIndex(CHAGOK_COLUMN_NAME))+ " \n"+
-                    res.getString(res.getColumnIndex(CHAGOK_COLUMN_LOGINID))+" || "+
-                    res.getString(res.getColumnIndex(CHAGOK_COLUMN_PASSWORD)));
-
-            array_seq[seq] = res.getString(res.getColumnIndex(CHAGOK_COLUMN_ID));  // 배열에 PK값 넣기
-            seq++;
-
-            res.moveToNext();
-        }
-        return array_seq;
-    }*/
-
 }

@@ -20,7 +20,6 @@ public class CreateQRcode extends AppCompatActivity {
     private String text;
     ImageButton btn1;
     DBHelper mydb;
-    String resname;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

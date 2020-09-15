@@ -68,7 +68,4 @@ public class Certification_res extends AppCompatActivity {
             }
         }
     }
-
-
-
 }

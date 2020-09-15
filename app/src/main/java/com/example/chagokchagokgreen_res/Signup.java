@@ -18,7 +18,6 @@ public class Signup extends AppCompatActivity {
     ImageButton btn1;
     DBHelper mydb;
     EditText name, id, pw, repw, phone, email;
-    //TextView testid, testpw;
     String spw, srepw;
 
 
@@ -33,8 +32,6 @@ public class Signup extends AppCompatActivity {
         repw = (EditText)findViewById(R.id.repw);
         phone = (EditText)findViewById(R.id.phone);
         email = (EditText)findViewById(R.id.email);
-       //testid = (TextView)findViewById(R.id.testid);
-        //testpw = (TextView)findViewById(R.id.testpw);
 
 
         btn1 = (ImageButton)findViewById(R.id.btn1);
