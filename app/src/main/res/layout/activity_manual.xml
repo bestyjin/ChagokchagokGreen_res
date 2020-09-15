@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Manual">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mainmenuline"
+        android:id="@+id/mainmenuline"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/manualmain_res"
+        android:layout_below="@+id/mainmenuline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/manualtitle"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="음식의 양에 따라 대,중,소로 나뉘게 됩니다.
+해당하는 사이즈에 맞춰 용기를 지참해주세요."
+        android:layout_below="@+id/manualtitle"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/manualimg_res"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/tv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/manualdetail"/>
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ok_res"
+        android:layout_below="@+id/manualdetail"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn"/>
+
+</RelativeLayout>

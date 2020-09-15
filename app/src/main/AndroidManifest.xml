@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chagokchagokgreen_res">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/res_leaf"
+        android:label="차곡차곡그린\n-가게용"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Loading_res">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SettingPoints"/>
+        <activity android:name=".CreateQRcode"/>
+        <activity android:name=".Signup"/>
+        <activity android:name=".Certification_res"/>
+        <activity android:name=".Manual"/>
+    </application>
+
+</manifest>

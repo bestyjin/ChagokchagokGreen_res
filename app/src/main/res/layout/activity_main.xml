@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mainmenuline"
+        android:id="@+id/mainmenuline"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mainmenuline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/leaf"
+        android:layout_below="@id/mainmenuline"
+        android:layout_toLeftOf="@+id/name"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:text="_____"
+        android:id="@+id/textname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" 님, 안녕하세요."
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_below="@+id/mainmenuline"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/name"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mainmenubtn1_res"
+        android:id="@+id/mainmenubtn1"
+        android:layout_below="@+id/mainmenuline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:text="고객에게 제공되는 QR코드를 생성합니다.\n 인쇄하시면 편리한 사용이 가능합니다."
+        android:layout_below="@+id/mainmenubtn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mainmenutv1"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mainmenubtn2_res"
+        android:id="@+id/mainmenubtn2"
+        android:layout_below="@+id/mainmenutv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/transparent"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="우리가게만의 포인트를 직접 설정할 수 있습니다."
+        android:layout_below="@+id/mainmenubtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/mainmenutv2"/>
+
+
+</RelativeLayout>
