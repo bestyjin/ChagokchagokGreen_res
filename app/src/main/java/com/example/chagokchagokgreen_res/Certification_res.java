@@ -43,7 +43,6 @@ public class Certification_res extends AppCompatActivity {
         });
 
         // DB구현
-
         mydb = new DBHelper(this);
         Bundle extras = getIntent().getExtras();
         int key = 0;
