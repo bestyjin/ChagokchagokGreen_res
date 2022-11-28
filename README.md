@@ -1,4 +1,4 @@
-# 우리가 차곡차곡 GREEN (가게용)
+# 우리가 차곡차곡 GREEN (가게용) <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=Android&logoColor=white"/>
 ## 캡스톤 디자인 수업 팀 프로젝트
 ### 신개념 일회용 쓰레기 줄이기 동참 앱
 
